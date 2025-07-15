@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainha de Sabá - Sebo Literário</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <img src="rainhaLogo.jpg" alt="Logo Rainha de Sabá" class="logo">
+            <h1>Rainha de Sabá - Sebo Literário</h1>
+        </div>
+        <p class="tagline">Onde cada livro conta uma nova história...</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Gerenciamento de Livros</h2>
+            <form method="GET" class="search-form">
+                <input type="text" name="search" placeholder="Buscar por título ou autor..."
+                       value="Dom" class="search-input">
+                <button type="submit" class="button primary-button">Buscar</button>
+                <a href="/" class="button secondary-button">Limpar Busca</a>
+            </form>
+
+            <div class="search-info">
+                <p><strong>Resultados da busca por "Dom":</strong> 1 livro(s) encontrado(s)</p>
+                <p>Total de livros cadastrados: 6</p>
+            </div>
+
+            <a href="/novo" class="button add-button">Adicionar Novo Livro</a>
+        </section>
+
+        <section class="results-section">
+            <h2>Resultados da Busca</h2>
+
+            <table class="books-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dom Casmurro</td>
+                        <td>Machado de Assis</td>
+                        <td>
+                            <a href="/editar/1" class="button edit-button">Editar</a>
+                            <a href="/excluir/1" class="button delete-button"
+                                onclick="return confirm('Tem certeza que deseja excluir este livro?')">Excluir</a>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+        </section>
+
+        <section class="image-gallery">
+            <h2>Inspiração Literária</h2>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/200x200/4a749e/ffffff?text=Livro+1" alt="Pilha de livros antigos">
+                <img src="https://via.placeholder.com/200x200/5d8ebf/ffffff?text=Livro+2" alt="Estante cheia de livros">
+                <img src="https://via.placeholder.com/200x200/7aa7e0/ffffff?text=Livro+3" alt="Livro aberto com óculos">
+                <img src="https://via.placeholder.com/200x200/8db3eb/ffffff?text=Livro+4" alt="Detalhe de capa de livro">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rainha de Sabá - Sebo Literário. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
